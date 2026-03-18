@@ -189,6 +189,7 @@ When non-nil, user message sections are expanded."
   :group 'agent-shell)
 
 (autoload 'agent-shell--resolve-tramp-path "agent-shell-tramp")
+(autoload 'agent-shell--tramp-transcript-dir "agent-shell-tramp")
 
 (defcustom agent-shell-path-resolver-function #'agent-shell--resolve-tramp-path
   "Function for resolving remote paths on the local file-system, and vice versa.
